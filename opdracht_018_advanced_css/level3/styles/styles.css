@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.social-nav {
+  position: absolute;
+  margin-top: 400px;
+  right: -165px;
+}
+
+.social-nav__blog {
+  background: #e17b77;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav__blog::before {
+  content: "\f5fc";
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+.social-nav__blog:hover {
+  right: 165px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.social-nav__blog__link {
+  color: white;
+}
+
+.social-nav__twitter {
+  background-color: #00aced;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav__twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+.social-nav__twitter:hover {
+  right: 165px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.social-nav__twitter__link {
+  color: white;
+}
+
+.social-nav__linkedin {
+  background-color: #007bb6;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav__linkedin::before {
+  content: "\f0e1";
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+.social-nav__linkedin:hover {
+  right: 165px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.social-nav__linkedin__link {
+  color: white;
+}
+
+.social-nav__facebook {
+  background-color: #3b5998;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav__facebook::before {
+  content: "\f39e";
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+.social-nav__facebook:hover {
+  right: 165px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.social-nav__facebook__link {
+  color: white;
+}
+
+.social-nav__github {
+  background-color: #333;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav__github::before {
+  content: "\f09b";
+  font-size: 25px;
+  color: white;
+  margin-right: 15px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+.social-nav__github:hover {
+  right: 165px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.social-nav__github__link {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

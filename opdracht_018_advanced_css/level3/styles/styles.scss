@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$text-logo-color: white;
+
+@mixin social-links {
+    position: relative;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+@mixin logos {
+    font-size: 25px;
+    color: $text-logo-color;
+    margin-right: 15px;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-weight: 900;
+}
+
+@mixin hover {
+    right: 165px;
+    transition: width 1s ease;
+}
+
+@mixin link {
+    color: $text-logo-color;
+}
+
+.social-nav {
+    position: absolute;
+    margin-top: 400px;
+    right: -165px;
+
+    &__blog {
+        background: #e17b77;
+        @include social-links;
+
+        &::before {
+            content: "\f5fc";
+            @include logos;
+        }
+
+        &:hover {
+            @include hover;
+        }
+
+        &__link {
+            @include link;
+        }
+    }
+
+    &__twitter {
+        background-color: #00aced;
+        @include social-links;
+
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            content: "\f099";
+            @include logos;
+        }
+
+        &:hover {
+            @include hover;
+        }
+
+        &__link {
+            @include link;
+        }
+    }
+
+    &__linkedin {
+        background-color: #007bb6;
+        @include social-links;
+
+        &::before {
+            content: "\f0e1";
+            @include logos;
+        }
+
+        &:hover {
+            @include hover;
+        }
+
+        &__link {
+            @include link;
+        }
+    }
+
+    &__facebook {
+        background-color: #3b5998;
+        @include social-links;
+
+        &::before {
+            content: "\f39e";
+            @include logos;
+        }
+
+        &:hover {
+            @include hover;
+        }
+
+        &__link {
+            @include link;
+        }
+    }
+
+    &__github {
+        background-color: #333;
+        @include social-links;
+
+        &::before {
+            content: "\f09b";
+            @include logos;
+        }
+
+        &:hover {
+            @include hover;
+        }
+
+        &__link {
+            @include link;
+        }
+    }
+}
