@@ -60,6 +60,10 @@ body {
   border-radius: 5px;
 }
 
+.portfolio__foto__img__button:hover {
+  display: inline-block;
+}
+
 @media (min-width: 768px) {
   .portfolio {
     -ms-grid-columns: 1fr 1fr;

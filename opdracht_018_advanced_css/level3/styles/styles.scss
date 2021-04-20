@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 $text-logo-color: white;
 
 @mixin social-links {
@@ -10,6 +15,7 @@ $text-logo-color: white;
     display: flex;
     text-align: center;
     padding: 10px;
+    transition: transform 750ms ease;
 }
 
 @mixin logos {
@@ -18,15 +24,16 @@ $text-logo-color: white;
     margin-right: 15px;
     font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
     font-weight: 900;
+    position: relative;
 }
 
 @mixin hover {
-    right: 165px;
-    transition: width 1s ease;
+    transform: translateX(-165px);
 }
 
 @mixin link {
     color: $text-logo-color;
+
 }
 
 .social-nav {
@@ -57,7 +64,6 @@ $text-logo-color: white;
         @include social-links;
 
         &::before {
-            font-family: "Font Awesome 5 Brands";
             content: "\f099";
             @include logos;
         }
